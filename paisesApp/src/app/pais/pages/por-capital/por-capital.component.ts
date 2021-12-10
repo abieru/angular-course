@@ -33,6 +33,15 @@ export class PorCapitalComponent implements OnInit {
   }
   sugerencias(termino : string){
     this.temErro = false;
+
+    this.paisservices.buscarCapital(termino)
+    .subscribe((paises) => {
+      console.log(paises);
+      this.paises = paises;
+    }, (err) =>{
+      this.temErro = true;
+      this.paises  = [];
+    })
     
     //  creando sugerencias en real time
   }

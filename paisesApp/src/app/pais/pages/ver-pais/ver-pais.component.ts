@@ -21,6 +21,15 @@ export class VerPaisComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
+
+    //this.activateroute.params.
+
+
+
+
+
+    /*
     this.activateroute.params
     .subscribe( ({ id }) =>{
       this.paisservice.getPaisPorAlpha(id)
@@ -31,6 +40,7 @@ export class VerPaisComponent implements OnInit {
         
       })
     })
+    */
   }
 
 }
